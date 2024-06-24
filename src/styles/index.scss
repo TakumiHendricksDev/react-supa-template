@@ -501,7 +501,11 @@ video {
   --tw-contain-paint:  ;
   --tw-contain-style:  ;
 }
-.text-red-500 {
+.text-green-200 {
   --tw-text-opacity: 1;
-  color: rgb(239 68 68 / var(--tw-text-opacity));
+  color: rgb(187 247 208 / var(--tw-text-opacity));
+}
+.text-green-800 {
+  --tw-text-opacity: 1;
+  color: rgb(22 101 52 / var(--tw-text-opacity));
 }
