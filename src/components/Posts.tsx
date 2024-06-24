@@ -1,5 +1,6 @@
 import { supabase } from '../db/supabase'
 import {useEffect, useState} from "react";
+import Post from "./Post.tsx";
 
 export default function Posts() {
     const [posts, setPosts] = useState([])
@@ -18,14 +19,14 @@ export default function Posts() {
         fetchPosts().then(_ => console.log('posts fetched'))
     }, [])
     const postItems = posts.map(({id, title}) =>
-        <div key={id}>
-            <h1>Post {title}</h1>
-        </div>
+        <Post id={id} title={title} />
     );
 
     return (
         <>
-            {postItems}
+            <div className="flex flex-col gap-2">
+                {postItems}
+            </div>
         </>
     );
 }

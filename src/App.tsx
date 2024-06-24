@@ -5,7 +5,9 @@ function App() {
   return (
     <>
         <Navigation />
-        <Posts />
+        <div className="p-4">
+            <Posts />
+        </div>
     </>
   )
 }
