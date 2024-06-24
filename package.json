@@ -13,6 +13,7 @@
     "watch": "postcss src/styles/tailwind.scss -o src/styles/index.scss --watch"
   },
   "dependencies": {
+    "@supabase/supabase-js": "^2.43.5",
     "node-sass": "^9.0.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
